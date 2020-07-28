@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script defer src="js/lib/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet"> 
+    <title>bootstrap practice</title>
+  </head>
+<!---------------------------- SITE BODY ---------------------------->
+  <body data-spy="scroll" data-target=".site-nav" data-offset="55">
+
+    <header id="page-hero" class="site-header">
+      <!---------------------------- NAVBAR ---------------------------->
+
+      <nav class = "site-nav family-sans text-uppercase navbar fixed-top navbar-expand-md navbar-dark">
+        <!-- navbar-expand-md makes the menu expand when it's full screen-->
+        <div class="container-fluid">
+          <button type="button" class="navbar-toggler" data-toggle= "collapse" data-target="#myTogglerNav"
+          aria-controls="#myTogglerNav" aria-label="Toggle Navigation"> 
+          <!-- data-toggle shows what the thing will do, data-target says what the thing is-->
+        <span class="navbar-toggler-icon"></span>
+        </button>
+          <a class="navbar-brand" href="#page-hero">
+            <i class="fas fa-cube"></i>
+              Bootstrap Layouts
+          </a>
+          <section class="collapse navbar-collapse" id="myTogglerNav">
+            <div class="navbar-nav ml-auto">
+              <!-- m and p are the spacing classes-->
+              <a class= "nav-item nav-link" href="#page-hero">home</a>
+              <a class= "nav-item nav-link" href="#page-multicolumn">columns</a>
+              <a class= "nav-item nav-link" href="#page-media">media</a>
+              <a class= "nav-item nav-link" href="#page-photogrid">grid</a>
+              <a class= "nav-item nav-link" href="#page-carousel">carousel</a>
+              <a class= "nav-item nav-link" href="#page-nested">nested</a>
+              <a class= "nav-item nav-link" href="#page-iconcolumns">icons</a>
+              <a class= "nav-item nav-link" href="#page-floater">floater</a>
+              <a class= "nav-item nav-link" href="#page-cards">cards</a>
+            </div>
+          </section>
+        </div>
+      </nav>
+      <!---------------------------- HEADER ---------------------------->
+
+      <section class="layout-hero d-flex align-items-center text-light text-center">
+        <div class="container">
+          <div class="row justify-content-center animated fadeInUp">
+            <div class="col-11 col-sm-10 col-md-8">
+              <h3 class="page-section-title"> Title</h3>
+              <p class="page-section-text"> body</p>
+            </div>
+          </div> 
+        </div>
+      </section>
+
+    </header>
+    <!---------------------------- MULTICOLUMN ---------------------------->
+
+    <article id="page-multicolumn" class="page-section text-center py-5">
+      <!---------------------------- MULTICOLUMN HEADER ---------------------------->
+      <header class="page-section-header container">
+        <div class="row justify-content-center">
+          <div class="col-11 col-sm-10 col-md-8">
+            <h2 class="page-section-title"> Multi-column </h2>
+            <p class="page-section-text">text</p>
+          </div>
+        </div>
+      </header>
+      <!---------------------------- MULTICOLUMN PICTURES ---------------------------->
+      <section class="layout-multicolumn container">
+        <div class="row justify-content-center family-sans text-uppercase">
+          <!-- div is usually just for styling and doesn't have meaning-->
+          <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+            <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster01.svg" href="#">
+              <img class="layout-image" src="images/monster01_tn.svg" alt="Monster Image 01">
+            </a> 
+            <h5 class="layout-title pt-2">Mingle</h5>           
+          </section>
+  
+          <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+            <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster02.svg" href="#">
+              <img class="layout-image" src="images/monster02_tn.svg" alt="Monster Image 02">
+            </a> 
+            <h5 class="layout-title pt-2">Yodel</h5>           
+          </section>
+  
+          <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+            <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster03.svg" href="#">
+              <img class="layout-image" src="images/monster03_tn.svg" alt="Monster Image 03">
+            </a> 
+            <h5 class="layout-title pt-2">Blippy</h5>           
+          </section>
+  
+          <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+            <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster04.svg" href="#">
+              <img class="layout-image" src="images/monster04_tn.svg" alt="Monster Image 04">
+            </a> 
+            <h5 class="layout-title pt-2">Dippy</h5>           
+          </section>
+
+          <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+            <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster05.svg" href="#">
+              <img class="layout-image" src="images/monster05_tn.svg" alt="Monster Image 05">
+            </a> 
+            <h5 class="layout-title pt-2">Flippy</h5>           
+          </section>
+
+          <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+            <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster06.svg" href="#">
+              <img class="layout-image" src="images/monster06_tn.svg" alt="Monster Image 06">
+            </a> 
+            <h5 class="layout-title pt-2">Skippy</h5>           
+          </section>
+
+          <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+            <a data-toggle="modal" data-target="#site-modal" data-highres="images/monster07.svg" href="#">
+              <img class="layout-image" src="images/monster07_tn.svg" alt="Monster Image 07">
+            </a> 
+            <h5 class="layout-title pt-2">Trippy</h5>           
+          </section>
+        </div>
+
+      </section>
+    </article>
+    <!---------------------------- MEDIA ---------------------------->
+
+    <article id="page-media" class="page-section py-5">
+     <!---------------------------- MEDIA HEADER ---------------------------->
+
+      <header class="page-section-header container text-center">
+        <!-- container class makes the section go with the bootstrap grid-->
+        <h2 class="page-section-title">Media</h2>
+        <p class="page-section-text">Either the well was very deep, or she fell very slowly,
+           for she had plenty of time as she went down to look about
+            her and to wonder what was going to happen next.
+             First, she tried to look down and make out what she was 
+             coming to, but it was too dark to see anything;
+              then she looked at the sides of the well,
+               and noticed that they were filled with cupboards
+                and book-shelves; here and there she saw maps and
+                 pictures hung upon pegs. 
+                 She took down a jar from one of the shelves as she passed;
+                it was labelled “ORANGE MARMALADE”, but to her great disappointment
+                 it was empty: she did not like to drop the jar for fear of killing 
+                 somebody underneath, so managed to put it into one of the cupboards
+                  as she fell past it. 
+          </p>
+      </header>
+
+      <section class="layout-media container my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 layout-animation invisible">
+            
+            <section class="media">
+              <img  class="layout-image" src="images/media01.gif" alt="Media Image 01">
+              <div class="media-body">
+                <h4 class="layout-title"> Yodelay-hee-hoo</h4>
+                <p class="layout-text"> “Well!” thought Alice to herself,
+                   “after such a fall as this, I shall think nothing of
+                    tumbling down stairs! 
+                    How brave they’ll all think me at home! 
+                    Why, I wouldn’t say anything about it, 
+                  even if I fell off the top of the house!” 
+                  (Which was very likely true.) 
+                 </p>
+              </div>
+            </section>
+    
+            <section class="media">
+              <img  class="layout-image" src="images/media02.gif" alt="Media Image 02">
+              <div class="media-body">
+                <h4 class="layout-title"> Yodelay-hee-hoo</h4>
+                <p class="layout-text"> “Well!” thought Alice to herself,
+                   “after such a fall as this, I shall think nothing of
+                    tumbling down stairs! 
+                    How brave they’ll all think me at home! 
+                    Why, I wouldn’t say anything about it, 
+                  even if I fell off the top of the house!” 
+                  (Which was very likely true.) 
+                 </p>
+              </div>
+            </section>
+    
+            <section class="media">
+              <img  class="layout-image" src="images/media03.gif" alt="Media Image 03">
+              <div class="media-body">
+                <h4 class="layout-title"> Yodelay-hee-hoo</h4>
+                <p class="layout-text"> “Well!” thought Alice to herself,
+                   “after such a fall as this, I shall think nothing of
+                    tumbling down stairs! 
+                    How brave they’ll all think me at home! 
+                    Why, I wouldn’t say anything about it, 
+                  even if I fell off the top of the house!” 
+                  (Which was very likely true.) 
+                 </p>
+              </div>
+            </section>
+          </div>
+        </div>
+
+      </section>
+
+    </article>
+  <!---------------------------- PHOTOGRID ---------------------------->
+
+    <article id="page-photogrid" class="page-section">
+      
+      <section class="layout-photogrid">
+        <div class="row justify-content-center no-gutters">
+          <div class="layout-image col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <img src="images/monster01_tn.svg" alt="Monster 01 image">
+          </div>
+  
+          <div class="layout-image col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <img src="images/monster02_tn.svg" alt="Monster 02 image">
+          </div>
+  
+          <div class="layout-image col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <img src="images/monster03_tn.svg" alt="Monster 03 image">
+          </div>
+  
+          <div class="layout-image col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <img src="images/monster04_tn.svg" alt="Monster 04 image">
+          </div>
+  
+          <div class="layout-image col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <img src="images/monster05_tn.svg" alt="Monster 05 image">
+          </div>
+  
+          <div class="layout-image col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <img src="images/monster06_tn.svg" alt="Monster 06 image">
+          </div>
+  
+          <div class="layout-image col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <img src="images/monster07_tn.svg" alt="Monster 07 image">
+          </div>
+  
+          <div class="layout-image col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <img src="images/monster08_tn.svg" alt="Monster 08 image">
+          </div>
+  
+          <div class="layout-image col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <img src="images/monster09_tn.svg" alt="Monster 09 image">
+          </div>
+  
+          <div class="layout-image col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <img src="images/monster10_tn.svg" alt="Monster 10 image">
+          </div>
+  
+          <div class="layout-image col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <img src="images/monster11_tn.svg" alt="Monster 11 image">
+          </div>
+  
+          <div class="layout-image col-12 col-sm-6 col-md-4 col-lg-3"> 
+            <img src="images/monster12_tn.svg" alt="Monster 12 image">
+          </div>
+  
+        </div>
+
+      </section>
+
+    </article>
+
+  <!---------------------------- CAROUSEL ---------------------------->
+
+    <article id="page-carousel" class="page-section">
+
+      <section id="layout-carousel" class="layout-carousel carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner">
+
+          <!-- makes smol little indicators to show what image you're on -->
+          <ol class="carousel-indicators my-3">
+            <li data-target="#layout-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#layout-carousel" data-slide-to="1"></li>
+            <li data-target="#layout-carousel" data-slide-to="2"></li>
+          </ol>
+          
+          <!-- active at the end identifies the default image-->
+          <section class="carousel-item active"> 
+            <img class="layout-image img-fluid d-block" src="images/carousel01.svg" alt="Carousel Image 01">
+          </section>
+
+          <section class="carousel-item"> 
+            <img class="layout-image img-fluid d-block" src="images/carousel02.svg" alt="Carousel Image 02">
+          </section>
+
+          <section class="carousel-item"> 
+            <img class="layout-image img-fluid d-block" src="images/carousel03.svg" alt="Carousel Image 03">
+          </section>
+
+          <a class="carousel-control-prev" href="#layout-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon">
+              <span class="sr-only">Previous</span> <!-- for screen readers -->
+            </span>
+          </a>
+          
+          <a class="carousel-control-next" href="#layout-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon">
+              <span class="sr-only">Next</span> <!-- for screen readers -->
+            </span>
+          </a>
+        </div>
+      </section>
+    </article>
+  <!---------------------------- NEST ---------------------------->
+
+    <article id="page-nested" class="page-section">
+
+      <div class="layout-nested container py-5">
+
+        <div class="row justify-content-center">
+
+          <section class="col-sm-10 col-md-5 col-lg-12 text-center text-lg-left">
+            <div class="row align-items-center justify-content-center">
+              <section class="col-lg-3">
+                <img class="layout-image" src="images/nested01.svg" alt="Nested Image 01">
+              </section>
+
+              <section class="col-lg-9">
+                <h2 class="layout-title">Hatching a plan</h2>
+                <p class="layout-text"> “Well!” thought Alice to herself,
+                  “after such a fall as this, I shall think nothing of
+                  tumbling down stairs! 
+                  How brave they’ll all think me at home! 
+                  Why, I wouldn’t say anything about it, 
+                even if I fell off the top of the house!” 
+                (Which was very likely true.) 
+                </p>
+              </section>
+            </div> 
+
+          </section>
+    
+          <section class="col-sm-10 col-md-5 col-lg-12 text-center text-lg-left">
+            <div class="row align-items-center justify-content-center">
+              <section class="col-lg-3">
+                <img class="layout-image" src="images/nested02.svg" alt="Nested Image 02">
+              </section>
+
+              <section class="col-lg-9">
+                <h2 class="layout-title">Emerging talent</h2>
+                <p class="layout-text"> “Well!” thought Alice to herself,
+                  “after such a fall as this, I shall think nothing of
+                  tumbling down stairs! 
+                  How brave they’ll all think me at home! 
+                  Why, I wouldn’t say anything about it, 
+                  even if I fell off the top of the house!” 
+                  (Which was very likely true.) 
+                </p>
+              </section>
+            </div>
+          </section>
+          
+        </div>
+
+      </div>
+
+    </article>
+
+  <!---------------------------- ICON COLUMNS ---------------------------->
+
+    <article id="page-iconcolumns" class="page-section">
+      <!-- use SVG for clean resizing : ) -->
+
+      <section class="layout-iconcolumns container py-5">
+
+        <div class="row text-center">
+          <section class="col-md-4 my-3">
+            <img class="icon layout-icon" src="images/icon01.svg" alt="Icon 01">
+            <h3 class="layout-title">Horns</h3>
+            <p class="layout-text"> I am a sleepy gorl. it is raining outside.</p>
+          </section>
+    
+          <section class="col-md-4 my-3">
+            <img class="icon layout-icon" src="images/icon02.svg" alt="Icon 02">
+            <h3 class="layout-title">Horns</h3>
+            <p class="layout-text"> I am a sleepy gorl. it is raining outside.</p>
+          </section>
+    
+          <section class="col-md-4 my-3">
+            <img class="icon layout-icon" src="images/icon03.svg" alt="Icon 03">
+            <h3 class="layout-title">Horns</h3>
+            <p class="layout-text"> I am a sleepy gorl. it is raining outside.</p>
+          </section>
+
+        </div>
+
+      </section>
+
+    </article>
+
+  <!---------------------------- FLOATER ---------------------------->
+
+  <article id="page-floater" class="page-section">
+    <section class="layout-floater container py-5">
+
+      <div class="row align-items-center justify-content-center">
+        
+        <section class="layout-container col-8 col-md-4">
+          <img class="layout-image" src="images/floater.svg" alt="Floater Image">
+        </section>
+    
+        <section class="col-10 col-md-6 text-center text-md-left pl-md-5">
+          <h2 class="layout-title">You've got a Friend</h2>
+          <p class="layout-text">You've got a friend in me - when the road looks
+            rough ahead and you're miles and miles from your nice warm bed ...
+            you just remember what your old pal said
+          </p>
+        </section>
+      </div>
+
+    </section>
+  </article>
+
+  <!---------------------------- CARD ---------------------------->
+
+  <article id="page-cards" class="page-section">
+
+    <section class="layout-cards container">
+
+      <div class="row justify-content-center">
+
+        <div class="col-8 col-sm-12 col-lg-10">
+          
+          <div class="card-deck">
+            <section class= "card my-3">
+              <img class="layout-image card-img-top img-fluid" src="images/card01.svg" alt="card01">
+
+              <div class="card-body">
+                <h4 class="layout-title card-title" >Boo!</h4>
+                <p class="layout-text card-text" >spoooooooooooooky business</p>
+              </div>
+            </section>
+      
+            <section class= "card my-3">
+              <img class="layout-image card-img-top img-fluid" src="images/card02.svg" alt="card02">
+
+              <div class="card-body">
+                <h4 class="layout-title card-title" >Boo!</h4>
+                <p class="layout-text card-text" >spoooooooooooooky business</p>
+              </div>
+            </section>
+      
+            <section class= "card my-3">
+              <img class="layout-image card-img-top img-fluid" src="images/card03.svg" alt="card03">
+
+              <div class="card-body">
+                <h4 class="layout-title card-title" >Boo!</h4>
+                <p class="layout-text card-text" >spoooooooooooooky business</p>
+              </div>
+            </section>
+
+          </div>
+
+        </div>
+        
+      </div>
+      
+    </section>
+  </article>
+
+  <!---------------------------- FOOTER ---------------------------->
+
+  <footer class="site-footer bg-secondary d-flex justify-content-center"> 
+    <!-- in bootstrap, classes don't travel from parent to child
+    so we had to add text-light and layout-icon to each item here-->
+    <section class="layout-social py-5">
+      <a class="text-light px-2" href="https://www.linkedin.com/in/paulinaschuler/">
+        <i class="layout-icon fab fa-linkedin"></i>
+      </a>
+      <a class="text-light px-2" href="https://github.com/paulina1211">
+        <i class="layout-icon fab fa-github"></i>
+      </a>
+    </section>
+   
+  </footer>
+
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+  <!---------------------------- MODAL ---------------------------->
+  <article id="site-modal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+         <img data-dismiss="modal" class="img-fluid" src="#" alt="Modal Photo">
+         <!-- data-dismiss makes data disappear when u click on it -->
+      </div>
+    </div>
+  </article>
+
+
+</html>
+

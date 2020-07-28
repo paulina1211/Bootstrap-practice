@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital,wght@0,300;0,400;0,700;1,700&display=swap');
+
+
+:root {
+    /* --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; */
+    
+    
+    /* Override variables*/
+    --white: hsla(60, 11%, 98%, 1);
+    --black-coral: hsla(213, 15%, 39%, 1);
+    --medium-turquoise: hsla(177, 57%, 54%, 1);
+    --mandarin: hsla(17, 89%, 64%, 1);
+    --royal-purple: hsla(271, 30%, 51%, 1);
+
+    --font-family-sans-serif: 'Roboto',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+    /* Page variables */
+    --font-family-cursive: 'Fredoka One', cursive;
+
+    --color-text: var(--black-coral);
+    --font-family-text: var(--font-family-sans-serif);
+}
+
+/* ------------------GLOBAL STYLES------------------*/
+
+/* @keyframes fademein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+} */
+
+/* .fademein {
+    opacity: 0;
+    animation-name: fademein;
+    animation-duration: 4s;
+    animation-delay: 2s;
+} */
+
+/* more neutral template: */
+/* https://raybo.org/bootstrap4layouts/ */
+
+
+.animated {
+    visibility: visible !important;
+}
+
+body {
+    font-family: var(--font-family-text);
+    color: var(--color-text);
+    font-weight: 400;
+    background: --var(white);
+}
+
+.family-sans {
+    font-family: var(--font-family-sans-serif);
+}
+
+.layout-text {
+    font-size: 1.2em;
+}
+
+/* old bootstrap code, copy and paste this boi */
+.icon {
+    display: inline-block;
+    font-size: inherit;
+    overflow: visible;
+    vertical-align: -0.125;
+    text-rendering: auto;
+    fill: var(--royal-purple) !important; 
+    /* you can change the color of an svg fill is using this ^ */
+    width: 50px;
+    height: 50px;
+}
+
+/* ------------------HEADER------------------*/
+
+/* .site-header .site-nav {
+    background: var(--mandarin);
+} */
+
+.site-header .animated {
+    animation-delay: 2s;
+    animation-duration: 1s;
+}
+
+.site-header {
+    /* background: url(../images/hero.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: var(--medium-turquoise);
+}
+
+.site-nav .inbody {
+    background: var(--mandarin);
+}
+
+@media screen and (max-width: 768px){
+    .site-header .navbar-collapse {
+        background-color: rgba(0,0,0,.9);
+        padding: 10px;
+    }
+}
+
+.site-header .layout-hero {
+    min-height: 50vh;
+}
+
+.site-header .page-section-title {
+    font-size: 3em;
+    font-family: var(--font-family-cursive);
+}
+
+.site-header .page-section-text {
+    font-size:1.2em;
+}
+/*rem is relative to the whole document,
+em is relative to the container that it's in */
+/*size components with rem, and size individual elements inside of components with em */
+
+.page-section-header .page-section-title{
+    font-size: 4em;
+    font-family: var(--font-family-sans-serif);
+    font-weight: 200;
+    color: var(--royal-purple);
+}
+
+.page-section-header .page-section-text{
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+.site-header .nav-link {
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 2px;
+}
+
+.site-header .nav-link:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    max-width: 100px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--mandarin);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-out;
+}
+
+.site-header .nav-link:hover:before {
+    visibility:visible;
+    left:0px;
+    transform: scaleX(1);
+}
+/* ------------------MULTICOLUMN------------------*/
+
+#page-multicolumn {
+    background: var(--white);
+}
+
+.layout-multicolumn .layout-image {
+    transition: all 0.3s ease-out;
+    /* ease is like slow */
+}
+
+.layout-multicolumn .layout-image:hover {
+    transform: scale(1.1) translateY(-3px);
+}
+/* ------------------MEDIA------------------*/
+
+.layout-media .layout-image {
+    max-width: 200px;
+}
+
+.layout-media .layout-title {
+    color: var(--royal-purple);
+    font-family: var(--font-family-sans-serif);
+    font-weight: 200;
+    font-size: 1.6em;
+}
+
+/* ------------------PHOTOGRID------------------*/
+
+.layout-photogrid .layout-image {
+    background: var(--medium-turquoise);
+}
+
+#page-photogrid {
+    background: var(--royal-purple);
+}
+
+/* ------------------CAROUSEL------------------*/
+
+#page-carousel {
+    background: var(--royal-purple);
+}
+
+/* ------------------NEST------------------*/
+
+.layout-nested .layout-title {
+    color: var(--royal-purple);
+    font-family: var(--font-family-sans-serif);
+    font-weight: 400;
+    font-size: 2.2em;
+}
+
+/* ------------------FLOATER------------------*/
+
+#page-floater {
+    background: var(--mandarin);
+}
+
+@media screen and (min-width: 768px) {
+    #page-floater {
+        margin: 150px 0 150px 0;
+    }
+
+    .layout-floater .layout-container {
+        position: relative;
+    }
+    
+    .layout-floater .layout-image {
+        position: absolute;
+        /* absolute - lets you position things in relation to another element */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(15deg) scale(1.6);
+    }
+}
+
+/* ------------------FOOTER------------------*/
+
+.layout-social .layout-icon {
+    font-size: 2em;
+}
+
